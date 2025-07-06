@@ -7,8 +7,53 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/index.css">
+    <!--플러그인 필수 css cdn 연결-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!--플러그인 필수 JS cdn 연결-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
-    
+    <header>
+        <div class="ad_bnr">
+            <a href="#"><img src="./images/ad_bnr1.png" alt="올리브영 광고배너"></a>
+            <a href="#"><img src="./images/icon_close.png" alt="닫기버튼"></a>
+        </div>
+        <div class="header">
+            <h1><a href="#" class="logo"><img src="./images/header/logo.png" alt="라운드랩 바로가기"></a></h1>
+            <div class="gnb">
+                <a href="#">SHOP</a>
+                <a href="#">EVENT</a>
+                <a href="#">BRAND</a>
+                <a href="#">MAGAZINE</a>
+                <a href="#">C/S CENTER</a>
+            </div>
+            <div class="left">
+                <div class="search_box">
+                    <input type="text" name="search_b">
+                    <a href="#"><img src="./images/header/icon_search.png" alt="검색하기"></a>
+                </div>
+                <p><a href="#"><img src="./images/header/icon_cart.png" alt="장바구니 바로가기"></a></p>
+                <p><a href="#"><img src="./images/header/icon_user.png" alt="마이페이지 바로가기"></a></p>
+                <select name="KR" class="leng">
+                    <option>KR</option>
+                    <option value="#">ENGLISH</option>
+                    <option value="#">中文</option>
+                </select>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="swiper ad_swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide1"></div>
+                <div class="swiper-slide slide2"></div>
+                <div class="swiper-slide slide3"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </main>
+    <footer></footer>
 </body>
 </html>
