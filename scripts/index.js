@@ -25,8 +25,20 @@ const vedioList = new Swiper('.vedio_swiper',{
     spaceBetween:10, //사이 여백
     /* autoplay:{delay:3000}, */
     loop:true,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
+
+const reviewList = new Swiper('.review_swiper',{
+    slidesPerView:1, //전체개수가 아니라 보이는 개수가 기준
+    spaceBetween:10, //사이 여백
+    autoplay:{delay:3000},
+    loop:true,
     pagination: {
-        el: '.swiper-pagination',
+        el: '.review_swiper+.swiper-pagination',
         type:'bullets',
     },
 });
+
