@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/index.css">
+    <script src="./scripts/index.js" defer></script>
     <!--플러그인 필수 css cdn 연결-->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
@@ -45,6 +46,7 @@
         </div>
     </header>
     <main>
+        <!-- 1행 메인사진 -->
         <div class="swiper ad_swiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide slide1"></div>
@@ -53,6 +55,252 @@
             </div>
             <div class="swiper-pagination"></div>
         </div>
+
+        <!-- 2행 홍보문구 -->
+        <div class="title_g">
+            <div class="title">
+                <p>BETTER SKIN, BETTER ROUND</p>
+                <h2>피부를 위한<br>자연의 레시피</h2>
+            </div>
+            <p>삶의 휴식이 필요한 당신에게 피부를 위한 다정한 쉬어감을 제안하는, 일상 속 편안한 루틴이 되어 드립니다.<br>자연 유래 성분과 저자극 공식, 가장 편안한 상태로 오늘도 라운드랩하세요.</p>
+        </div>
+        <!-- 3행 new상품 -->
+        <div class="new_product">
+            <div class="new_title">
+                <h2>NEW ITEMS</h2>
+                <div class="more">
+                    <span>더보기</span>
+                    <img src="./images/new/icon_more.png" alt="">
+                </div>
+            </div>
+            <div class="swiper new_swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide1">
+                        <ul class="product">
+                            <li>
+                                <a href="#">
+                                    <div class="photo_icon">
+                                        <p><img src="./images/new/product1.png" alt=""></p>
+                                        <div class="new_icon">
+                                            <button type="button"><img src="./images/new/icon_pluscart.png" alt=""></button>
+                                            <button type="button"><img src="./images/new/icon_heart.png" alt=""></button>
+                                        </div>
+                                    </div>
+                                    <div class="prod_info">
+                                        <p>동백 딥 콜라겐 탄력 겔 마스크 (4매)</p>
+                                        <p>24,000원</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="photo_icon">
+                                        <p><img src="./images/new/product2.png" alt=""></p>
+                                        <div class="new_icon">
+                                            <button type="button"><img src="./images/new/icon_pluscart.png" alt=""></button>
+                                            <button type="button"><img src="./images/new/icon_heart.png" alt=""></button>
+                                        </div>
+                                    </div>
+                                    <div class="prod_info">
+                                        <p>동백 딥 콜라겐 탄력 앰플 30ml</p>
+                                        <p>31,000원</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="photo_icon">
+                                        <p><img src="./images/new/product3.png" alt=""></p>
+                                        <div class="new_icon">
+                                            <button type="button"><img src="./images/new/icon_pluscart.png" alt=""></button>
+                                            <button type="button"><img src="./images/new/icon_heart.png" alt=""></button>
+                                        </div>
+                                    </div>
+                                    <div class="prod_info">
+                                        <p>동백 딥 콜라겐 탄력 선세럼 50ml</p>
+                                        <p>25,200원</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="photo_icon">
+                                        <p><img src="./images/new/product4.png" alt=""></p>
+                                        <div class="new_icon">
+                                            <button type="button"><img src="./images/new/icon_pluscart.png" alt=""></button>
+                                            <button type="button"><img src="./images/new/icon_heart.png" alt=""></button>
+                                        </div>
+                                    </div>
+                                    <div class="prod_info">
+                                        <p>동백 딥 콜라겐 브이 리프팅 겔 마스크 (4매)</p>
+                                        <p>28,000원</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- <div class="swiper-slide slide2"></div>
+                    <div class="swiper-slide slide3"></div> -->
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <!-- 4행 이벤트배너 -->
+        <div class="event_bnr">
+            <a href="#"><img src="./images/event_bnr1.png" alt="회원가입바로가기"></a>
+            <a href="#"><img src="./images/event_bnr2.png" alt="포인트적립 바로가기"></a>
+        </div>
+        <!-- 5행 best 상품 -->
+        <div class="best_product">
+            <div class="title">
+                <h2>BEST ITEMS</h2>
+                <div class="more">
+                    <span>더보기</span>
+                    <img src="./images/new/icon_more.png" alt="더보기">
+                </div>
+            </div>
+            <div class="content">
+                <ul class="menu_g">
+                    <li><a href="#">토너/미스트</a></li>
+                    <li><a href="#">에센스/앰플</a></li>
+                    <li><a href="#">로션/크림</a></li>
+                    <li><a href="#">클렌징/스크럽</a></li>
+                    <li><a href="#">마스크/팩</a></li>
+                    <li><a href="#">선 케어</a></li>
+                </ul>
+                <div class="swiper best_swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide1">
+                            <a href="#">
+                                <div class="photo_icon">
+                                    <p><img src="./images/best/product001.png" alt=""></p>
+                                    <div class="new_icon">
+                                        <button type="button"><img src="./images/new/icon_pluscart.png" alt=""></button>
+                                        <button type="button"><img src="./images/new/icon_heart.png" alt=""></button>
+                                    </div>
+                                </div>
+                                <div class="prod_info">
+                                    <p>1025 독도 토너 대용량 500ml</p>
+                                    <p>26,000원</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slide2">
+                            <a href="#">
+                                <div class="photo_icon">
+                                    <p><img src="./images/best/product002.png" alt=""></p>
+                                    <div class="new_icon">
+                                        <button type="button"><img src="./images/new/icon_pluscart.png" alt=""></button>
+                                        <button type="button"><img src="./images/new/icon_heart.png" alt=""></button>
+                                    </div>
+                                </div>
+                                <div class="prod_info">
+                                    <p>소나무 진정 시카 패드(50매입)</p>
+                                    <p>21,000원</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slide3">
+                            <a href="#">
+                                <div class="photo_icon">
+                                    <p><img src="./images/best/product003.png" alt=""></p>
+                                    <div class="new_icon">
+                                        <button type="button"><img src="./images/new/icon_pluscart.png" alt=""></button>
+                                        <button type="button"><img src="./images/new/icon_heart.png" alt=""></button>
+                                    </div>
+                                </div>
+                                <div class="prod_info">
+                                    <p>약콩 판테놀 토너 250ml</p>
+                                    <p>23,000원</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slide4">
+                            <a href="#">
+                                <div class="photo_icon">
+                                    <p><img src="./images/best/product004.png" alt=""></p>
+                                    <div class="new_icon">
+                                        <button type="button"><img src="./images/new/icon_pluscart.png" alt=""></button>
+                                        <button type="button"><img src="./images/new/icon_heart.png" alt=""></button>
+                                    </div>
+                                </div>
+                                <div class="prod_info">
+                                    <p>포 맨 자작나무 수분 토너 200ml</p>
+                                    <p>19,200원</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slide5">
+                            <a href="#">
+                                <div class="photo_icon">
+                                    <p><img src="./images/best/product005.png" alt=""></p>
+                                    <div class="new_icon">
+                                        <button type="button"><img src="./images/new/icon_pluscart.png" alt=""></button>
+                                        <button type="button"><img src="./images/new/icon_heart.png" alt=""></button>
+                                    </div>
+                                </div>
+                                <div class="prod_info">
+                                    <p>자작나무 수분 선크림 50ml</p>
+                                    <p>22,500원</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slide6">
+                            <a href="#">
+                                <div class="photo_icon">
+                                    <p><img src="./images/best/product006.png" alt=""></p>
+                                    <div class="new_icon">
+                                        <button type="button"><img src="./images/new/icon_pluscart.png" alt=""></button>
+                                        <button type="button"><img src="./images/new/icon_heart.png" alt=""></button>
+                                    </div>
+                                </div>
+                                <div class="prod_info">
+                                    <p>약콩 판테놀 크림 80ml</p>
+                                    <p>34,000원</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-scrollbar"></div>
+                </div>
+            </div>
+        </div>
+        <!-- 6행 영상 -->
+        <div class="vedio_bg">
+            <div class="content_g">
+                <div class="title">
+                <h2>ROUND LAB</h2>
+                <a href="#"><img src="./images/video/icon_youtube.png" alt="유튜브바로가기"></a>
+            </div>
+            <div class="swiper vedio_swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide1">
+                        <div class="vedio_content">
+                            <iframe width="1000" height="600" src="https://www.youtube.com/embed/XQAaq2ZwCBo" title="믿고 쓰는 국민 토너! 피부 결 환생 1025 독도 토너💦" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="vedio_product">
+                            <p><img src="./images/video/product001.png" alt="독도토너"></p>
+                            <h3>1025 독도 토너 대용량 500ml</h3>
+                            <p>26,000원</p>
+                            <p>믿고 쓰는<br>NO.1 국민 토너</p>
+                            <div class="hashtag">
+                                <span>#11관왕</span>
+                                <span>#각질쓱싹</span>
+                                <span>#촉촉닥토</span>
+                            </div>
+                            <button type="button">구매하기</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide2"></div>
+                    <div class="swiper-slide slide3"></div>
+                </div>
+            </div>
+        </div>
+        <!-- 7행 리뷰 -->
+        <!-- 8행 띠배너 -->
+        <!-- 9행 매거진 -->
+        <!-- 10행 브랜드배너 -->
+        <!-- 11행 인스타그램 -->
     </main>
     <footer></footer>
 </body>

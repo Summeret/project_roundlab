@@ -1,1 +1,78 @@
 /* common.css */
+header {}
+header .ad_bnr {
+    position:relative;
+}
+header .ad_bnr a {}
+header .ad_bnr a:last-child {
+    position:absolute; right:10px; bottom:5px;
+}
+header .ad_bnr a img {}
+
+header .header {
+    display:flex; justify-content: space-between;
+    align-items:end;
+    padding:5px 120px;
+}
+header .header h1 {}
+header .header h1 a {}
+header .header h1 a img {}
+header .header .gnb {}
+header .header .gnb a {
+    font-weight:500;
+    margin-right:40px;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    padding-bottom:5px;
+}
+header .header .gnb a:hover::after {
+    width:100%;
+}
+header .header .gnb a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 1px;
+    background-color: #0E4885;
+    transform: translateX(-50%);
+    transition: all 0.3s ease;
+}
+header .header .gnb a:last-child {margin-right:0;}
+header .header .left {
+    display:flex; align-items:center;
+    height:30px;
+}
+header .header .left .search_box {
+    position:relative;
+    margin-right:10px;
+}
+header .header .left .search_box input {
+    width:230px; height:30px;
+    border-radius:8px;
+    border:1px solid rgba(0,0,0,0.3);
+    padding:5px 10px;
+    font-size:0.75rem;
+}
+header .header .left .search_box > a {
+    position:absolute; right:10px; top:5px;
+
+}
+header .header .left .search_box a img {}
+header .header .left p {
+    margin-right:10px;
+}
+header .header .left p a {}
+header .header .left p a img {}
+header .header .left .leng {
+    border:1px solid #eee;
+    border-radius:5px;
+    width:57px; height:23px;
+    font-size:0.813rem;
+    text-align:center;
+}
+header .header .left .leng option {
+    font-size:0.813rem;
+}
