@@ -42,3 +42,23 @@ const reviewList = new Swiper('.review_swiper',{
     },
 });
 
+const reviewP = setTimeout(()=>{
+    
+    const pAni = document.querySelectorAll('.review_content p');
+    console.log(pAni);
+
+    for(let i=0; i<pAni.length; i++){
+        pAni[i].classList.add('ani')
+    }
+},100);
+
+
+const instaList = new Swiper('.insta_swiper',{
+    slidesPerView:7, //전체개수가 아니라 보이는 개수가 기준
+    spaceBetween:5, //사이 여백
+    autoplay:{delay:1500},
+    loop:true,
+    scrollbar: {
+        el: '.swiper-scrollbar',
+    },
+});

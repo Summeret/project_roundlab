@@ -1,4 +1,6 @@
 /* common.css */
+
+/* header */
 header {}
 header .ad_bnr {
     position:relative;
@@ -17,8 +19,12 @@ header .header {
 header .header h1 {}
 header .header h1 a {}
 header .header h1 a img {}
-header .header .gnb {}
-header .header .gnb a {
+
+header .header nav {}
+header .header nav .gnb {
+    display:flex;
+}
+header .header nav .gnb > li {
     font-weight:500;
     margin-right:40px;
     position: relative;
@@ -26,10 +32,10 @@ header .header .gnb a {
     text-decoration: none;
     padding-bottom:5px;
 }
-header .header .gnb a:hover::after {
+header .header nav .gnb > li > a:hover::after {
     width:100%;
 }
-header .header .gnb a::after {
+header .header nav .gnb > li > a::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -40,7 +46,45 @@ header .header .gnb a::after {
     transform: translateX(-50%);
     transition: all 0.3s ease;
 }
-header .header .gnb a:last-child {margin-right:0;}
+header .header nav .gnb > li > a:last-child {margin-right:0;}
+
+header .header nav .gnb > li:hover .lnb_bg {display:block;}
+header .header nav .gnb > li .lnb_bg {
+    border:1px solid red;
+    background-color:rgba(255,255,255,0.8);
+    width:max-content;
+    padding:10px 30px;
+}
+header .header nav .gnb > li .lnb_bg .lnb_depth1 {
+    width:max-content;
+    display:flex;
+    text-align:center;
+}
+header .header nav .gnb > li .lnb_bg .lnb_depth1 > li {
+    background-color:aqua;
+    margin-right:100px; padding:10px;
+}
+header .header nav .gnb > li .lnb_bg .lnb_depth1 > li a {
+    font-weight:600;
+    color:#333;
+}
+header .header nav .gnb > li .lnb_bg .lnb_depth1 > li .lnb_depth2 {
+    margin-top:20px;
+}
+header .header nav .gnb > li .lnb_bg .lnb_depth1 > li .lnb_depth2 > li {
+    margin-bottom:10px;
+}
+header .header nav .gnb > li .lnb_bg .lnb_depth1 > li .lnb_depth2 > li:last-child {
+    margin-bottom:0;
+}
+header .header nav .gnb > li .lnb_bg .lnb_depth1 > li .lnb_depth2 > li a {
+    font-weight:400;
+    color:#333;
+}
+
+
+
+
 header .header .left {
     display:flex; align-items:center;
     height:30px;
@@ -75,4 +119,89 @@ header .header .left .leng {
 }
 header .header .left .leng option {
     font-size:0.813rem;
+}
+
+/* footer */
+footer {
+    width:1680px; margin:0 auto; padding:100px 0;
+    border-top:1px solid rgba(0,0,0,0.3);
+    display: flex; justify-content: space-between;
+}
+footer .left {}
+footer .left .top {}
+footer .left .top p {}
+footer .left .top p:nth-child(1) {
+    font-size:1.25rem;
+}
+footer .left .top p:nth-child(2) {
+    font-size:2.25rem; font-weight:600;
+    margin:20px 0;
+}
+
+
+footer .left .bottom {
+    margin-top:20px;
+}
+footer .left .bottom .mail {
+    display:flex; align-items: center;
+    margin-bottom:20px;
+}
+footer .left .bottom .mail p {}
+footer .left .bottom .mail .mail_wrap {
+    display:flex; flex-flow:column nowrap;
+}
+footer .left .bottom .mail .mail_wrap span {}
+footer .left .bottom .bank {
+    display:flex; align-items: center;
+}
+footer .left .bottom .bank p {}
+footer .left .bottom .bank .bank_wrap {
+    display:flex; flex-flow:column nowrap;
+}
+footer .left .bottom .bank .bank_wrap span {}
+
+footer .left .bottom .mail p,
+footer .left .bottom .bank p {
+    font-size:0.75rem;
+    border:1px solid rgba(0,0,0,0.5);
+    border-radius:10px;
+    width:147px; line-height:34px;
+    text-align:center;
+    margin-right:20px;
+}
+footer .left .bottom .mail .mail_wrap span,
+footer .left .bottom .bank .bank_wrap span {
+    font-size:0.875rem; margin-bottom:2px;
+}
+
+
+footer .center {
+    display:flex; flex-flow:column nowrap;
+    justify-content:center; align-items: center;
+}
+footer .center a {}
+footer .center a img {}
+footer .center .sns {
+    margin-top:20px;
+}
+footer .center .sns a {margin-right:10px;}
+footer .center .sns a:last-child {margin-right:0;}
+footer .center .sns a img {}
+
+footer .right {
+    text-align:right;
+}
+footer .right .top {}
+footer .right .top a {
+    margin-right:15px;
+    font-size:0.875rem;
+}
+footer .right .top a:last-child {margin-right:0;}
+footer .right address {
+    margin:20px 0;
+    line-height:1.6;
+    font-size:0.75rem;
+}
+footer .right > p {
+    font-size:0.75rem;
 }
