@@ -1,4 +1,7 @@
 /* common.css */
+body {
+    width:1920px;
+}
 
 /* header */
 header {}
@@ -7,7 +10,7 @@ header .ad_bnr {
 }
 header .ad_bnr a {}
 header .ad_bnr a:last-child {
-    position:absolute; right:10px; bottom:5px;
+    position:absolute; right:30px; bottom:5px;
 }
 header .ad_bnr a img {}
 
@@ -27,10 +30,11 @@ header .header nav .gnb {
 header .header nav .gnb > li {
     font-weight:500;
     margin-right:40px;
-    position: relative;
-    display: inline-block;
-    text-decoration: none;
     padding-bottom:5px;
+}
+header .header nav .gnb > li > a {
+    font-weight:500;
+    position:relative;
 }
 header .header nav .gnb > li > a:hover::after {
     width:100%;
@@ -49,30 +53,53 @@ header .header nav .gnb > li > a::after {
 header .header nav .gnb > li > a:last-child {margin-right:0;}
 
 header .header nav .gnb > li:hover .lnb_bg {display:block;}
-header .header nav .gnb > li .lnb_bg {
-    border:1px solid red;
+header .header nav .gnb > li .lnb_bg {display:none;}
+header .header nav .gnb > li .lnb_bg1 {
     background-color:rgba(255,255,255,0.8);
     width:max-content;
-    padding:10px 30px;
+    padding:20px 50px;
+    position:absolute; left:600px; top:95px;
+    z-index:100;
 }
-header .header nav .gnb > li .lnb_bg .lnb_depth1 {
+header .header nav .gnb > li .lnb_bg2 {
+    background-color:rgba(255,255,255,0.8);
+    width:max-content;
+    padding:20px 80px;
+    position:absolute; left:700px; top:95px;
+    z-index:100;
+}
+header .header nav .gnb > li .lnb_bg3 {
+    background-color:rgba(255,255,255,0.8);
+    width:max-content;
+    padding:20px 80px;
+    position:absolute; right:750px; top:95px;
+    z-index:100;
+}
+header .header nav .gnb > li .lnb_bg1 .lnb_depth1 {
     width:max-content;
     display:flex;
     text-align:center;
 }
-header .header nav .gnb > li .lnb_bg .lnb_depth1 > li {
-    background-color:aqua;
+header .header nav .gnb > li .lnb_bg1 .lnb_depth1 > li {
     margin-right:100px; padding:10px;
 }
+header .header nav .gnb > li .lnb_bg2 .lnb_depth1 > li,
+header .header nav .gnb > li .lnb_bg3 .lnb_depth1 > li {
+    margin-bottom: 20px;
+}
+header .header nav .gnb > li .lnb_bg .lnb_depth1 > li:last-child {
+    margin-right:0; margin-bottom: 0;
+}
 header .header nav .gnb > li .lnb_bg .lnb_depth1 > li a {
-    font-weight:600;
+    font-weight:500;
     color:#333;
 }
+
 header .header nav .gnb > li .lnb_bg .lnb_depth1 > li .lnb_depth2 {
-    margin-top:20px;
+    margin-top:30px;
 }
 header .header nav .gnb > li .lnb_bg .lnb_depth1 > li .lnb_depth2 > li {
-    margin-bottom:10px;
+    margin-bottom:20px;
 }
 header .header nav .gnb > li .lnb_bg .lnb_depth1 > li .lnb_depth2 > li:last-child {
     margin-bottom:0;
@@ -92,13 +119,15 @@ header .header .left {
 header .header .left .search_box {
     position:relative;
     margin-right:10px;
-}
-header .header .left .search_box input {
-    width:230px; height:30px;
+    display: flex;
     border-radius:8px;
     border:1px solid rgba(0,0,0,0.3);
     padding:5px 10px;
+    width:230px; height:30px;
+}
+header .header .left .search_box input {
     font-size:0.75rem;
+    width:180px;
 }
 header .header .left .search_box > a {
     position:absolute; right:10px; top:5px;

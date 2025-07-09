@@ -1,5 +1,17 @@
 //index.js
+
+//슬라이드
 const adList = new Swiper('.ad_swiper',{
+    slidesPerView:1, //전체개수가 아니라 보이는 개수가 기준
+    spaceBetween:10, //사이 여백
+    autoplay:{delay:3000},
+    loop:true,
+    pagination: {
+        el: '.swiper-pagination',
+        type:'bullets',
+    },
+});
+const newList = new Swiper('.new_swiper',{
     slidesPerView:1, //전체개수가 아니라 보이는 개수가 기준
     spaceBetween:10, //사이 여백
     autoplay:{delay:3000},
@@ -62,3 +74,13 @@ const instaList = new Swiper('.insta_swiper',{
         el: '.swiper-scrollbar',
     },
 });
+
+//========================================
+
+const oliveBnr = document.querySelector('.ad_bnr');
+const closeBtn = document.querySelector('.close_btn');
+console.log(oliveBnr, closeBtn);
+
+closeBtn.addEventListener('click',()=>{
+    oliveBnr.style.display = 'none';
+})

@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
 }
-/* body, html {overflow-x:hidden;} */
 
 main {}
 
@@ -26,6 +25,10 @@ main  .ad_swiper .swiper-wrapper .slide3 {
     background-image:url(../images/main_bnr.png);
 }
 main  .ad_swiper .swiper-pagination {}
+main  .ad_swiper .swiper-pagination-bullet {
+    background-color: #0E4885;
+}
+
 /* =========================================== */
 
 /* 2행 홍보문구 */
@@ -72,7 +75,9 @@ main .new_product .new_title .more span {
 }
 main .new_product .new_title .more img {}
 main .new_product .new_swiper {}
-main .new_product .new_swiper .swiper-wrapper {}
+main .new_product .new_swiper .swiper-wrapper {
+    margin-bottom:100px
+}
 main .new_product .new_swiper .swiper-wrapper .swiper-slide {}
 main .new_product .new_swiper .swiper-wrapper .swiper-slide .product {
     display:flex; justify-content: space-between;
@@ -109,6 +114,9 @@ main .new_product .new_swiper .swiper-wrapper .swiper-slide .product li .prod_co
 main .new_product .new_swiper .swiper-wrapper .swiper-slide .product li .prod_content .new_icon button:hover {}
 main .new_product .new_swiper .swiper-wrapper .swiper-slide .product li .prod_content .new_icon button img {
     width:24px;
+}
+main .new_product .new_swiper .swiper-pagination-bullet {
+    background-color: #EDB0B7;
 }
 
 /* ===========================================  */
@@ -214,9 +222,13 @@ main .best_product .content .best_swiper .swiper-wrapper .swiper-slide .prod_con
     width:150px; border-bottom:0.3px solid rgba(0,0,0,0.1);
     margin:20px 125px 10px;
 }
-main .best_product .content .best_swiper .swiper-scrollbar {
-    transform:scaleX(0.8);
+main .best_product .content .best_swiper .swiper-scrollbar {}
+main .best_product .content .best_swiper .swiper-scrollbar-drag {
+    background-color: #0E4885;
 }
+
+
+
 /* ===========================================  */
 
 /* 6행 영상 */
