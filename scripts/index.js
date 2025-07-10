@@ -10,6 +10,10 @@ const adList = new Swiper('.ad_swiper',{
         el: '.swiper-pagination',
         type:'bullets',
     },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
 });
 const newList = new Swiper('.new_swiper',{
     slidesPerView:1, //전체개수가 아니라 보이는 개수가 기준
@@ -44,37 +48,27 @@ const vedioList = new Swiper('.vedio_swiper',{
 });
 
 const pAni = document.querySelectorAll('.review_content p');
-const reviewList = new Swiper('.review_swiper',{
+const reviewSLide = new Swiper('.review_swiper',{
     slidesPerView:1, //전체개수가 아니라 보이는 개수가 기준
     spaceBetween:10, //사이 여백
-    autoplay:{delay:5000},
+    autoplay:{delay:3000},
     loop:true,
     pagination: {
         el: '.review_swiper+.swiper-pagination',
         type:'bullets',
     },
     on:{
+        init(){
+            const activeSlide = this.slides[this.activeIndex];
+            for(let i of activeSlide.querySelectorAll('p')) i.classList.add('ani');
+        },
         slideChange:function(){
-            
-            for(let i=0; i<pAni.length; i++){
-                console.log(2)
-                // pAni[i].style.opacity = '1'
-                pAni[i].classList.add('ani')
-            }
+            for(let i of pAni) i.classList.remove('ani');
+            const activeSlide = this.slides[this.activeIndex];
+            for(let i of activeSlide.querySelectorAll('p')) i.classList.add('ani');
         }
     }
 });
-
-/* const reviewP = setTimeout(()=>{
-    
-    const pAni = document.querySelectorAll('.review_content p');
-    console.log(pAni);
-
-    for(let i=0; i<pAni.length; i++){
-        pAni[i].classList.add('ani')
-    }
-},100); */
-
 
 const instaList = new Swiper('.insta_swiper',{
     slidesPerView:7, //전체개수가 아니라 보이는 개수가 기준

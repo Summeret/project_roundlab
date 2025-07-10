@@ -8,26 +8,30 @@
 main {}
 
 /* 1행 메인사진 */
-main  .ad_swiper{}
+/* main  .ad_swiper{}
 main  .ad_swiper .swiper-wrapper {
-    width:1920px; height:830px;
+    width:100%; height:830px;
 }
 main  .ad_swiper .swiper-wrapper .swiper-slide {
     height:100%;
 }
 main  .ad_swiper .swiper-wrapper .slide1 {
-    background-image:url(../images/main_bnr.png);
+    background-image:url(../images/main_bnr1.png);
 }
 main  .ad_swiper .swiper-wrapper .slide2 {
-    background-image:url(../images/main_bnr.png);
+    
 }
 main  .ad_swiper .swiper-wrapper .slide3 {
-    background-image:url(../images/main_bnr.png);
+    
+}
+main  .ad_swiper .swiper-button-prev,
+main  .ad_swiper .swiper-button-next {
+    color: #0E4885; opacity:50%;
 }
 main  .ad_swiper .swiper-pagination {}
 main  .ad_swiper .swiper-pagination-bullet {
     background-color: #0E4885;
-}
+} */
 
 /* =========================================== */
 
@@ -224,7 +228,7 @@ main .best_product .content .best_swiper .swiper-wrapper .swiper-slide .prod_con
 }
 main .best_product .content .best_swiper .swiper-scrollbar {}
 main .best_product .content .best_swiper .swiper-scrollbar-drag {
-    background-color: #0E4885;
+    background-color: #0E4885; opacity:50%;
 }
 
 
@@ -261,6 +265,7 @@ main .vedio_bg .content_g .vedio_swiper .swiper-wrapper .swiper-slide {
 main .vedio_bg .content_g .vedio_swiper .swiper-wrapper .swiper-slide .vedio_content {} 
 main .vedio_bg .content_g .vedio_swiper .swiper-wrapper .swiper-slide .vedio_content iframe {
     width:1000px; height:700px;
+    border-radius: 10px;
 } 
 
 main .vedio_bg .content_g .vedio_swiper .swiper-wrapper .swiper-slide .vedio_product {
@@ -351,6 +356,7 @@ main .review_bg .review_swiper .swiper-wrapper .swiper-slide .review_content p {
 }
 main .review_bg .review_swiper .swiper-wrapper .swiper-slide .review_content p.ani {
     animation: review 1s ease both;
+    /* opacity: 1; transform: translateY(0); */
 }
 main .review_bg .review_swiper .swiper-slide .review_content p:nth-child(1) {}
 main .review_bg .review_swiper .swiper-slide .review_content p.ani:nth-child(2) {
@@ -470,7 +476,6 @@ main .instagram_wrap .insta_title a img {}
 
 main .instagram_wrap .insta_swiper {
     position:relative;
-    width:1920px;
 }
 main .instagram_wrap .insta_swiper .swiper-wrapper {}
 main .instagram_wrap .insta_swiper .swiper-wrapper .swiper-slide {}
