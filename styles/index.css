@@ -346,6 +346,7 @@ main .review_bg .review_swiper .swiper-wrapper .swiper-slide .review_content p {
     margin-bottom:20px;
     opacity: 0;
     transform: translateY(30px);
+    transition:all 0.3s;
 }
 main .review_bg .review_swiper .swiper-wrapper .swiper-slide .review_content p.ani {
     animation: fadeUp 1s ease both;

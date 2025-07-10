@@ -43,18 +43,29 @@ const vedioList = new Swiper('.vedio_swiper',{
     },
 });
 
+const pAni = document.querySelectorAll('.review_content p');
 const reviewList = new Swiper('.review_swiper',{
     slidesPerView:1, //전체개수가 아니라 보이는 개수가 기준
     spaceBetween:10, //사이 여백
-    autoplay:{delay:3000},
+    autoplay:{delay:5000},
     loop:true,
     pagination: {
         el: '.review_swiper+.swiper-pagination',
         type:'bullets',
     },
+    on:{
+        slideChange:function(){
+            
+            for(let i=0; i<pAni.length; i++){
+                console.log(2)
+                // pAni[i].style.opacity = '1'
+                pAni[i].classList.add('ani')
+            }
+        }
+    }
 });
 
-const reviewP = setTimeout(()=>{
+/* const reviewP = setTimeout(()=>{
     
     const pAni = document.querySelectorAll('.review_content p');
     console.log(pAni);
@@ -62,7 +73,7 @@ const reviewP = setTimeout(()=>{
     for(let i=0; i<pAni.length; i++){
         pAni[i].classList.add('ani')
     }
-},100);
+},100); */
 
 
 const instaList = new Swiper('.insta_swiper',{
