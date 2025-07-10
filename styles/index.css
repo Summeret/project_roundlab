@@ -339,6 +339,7 @@ main .review_bg .review_swiper .swiper-wrapper .swiper-slide a {
     margin-right:50px;
 }
 main .review_bg .review_swiper .swiper-wrapper .swiper-slide a img {}
+
 main .review_bg .review_swiper .swiper-wrapper .swiper-slide .review_content {}
 main .review_bg .review_swiper .swiper-wrapper .swiper-slide .review_content p {
     font-size: 1.375rem;
@@ -349,7 +350,7 @@ main .review_bg .review_swiper .swiper-wrapper .swiper-slide .review_content p {
     transition:all 0.3s;
 }
 main .review_bg .review_swiper .swiper-wrapper .swiper-slide .review_content p.ani {
-    animation: fadeUp 1s ease both;
+    animation: review 1s ease both;
 }
 main .review_bg .review_swiper .swiper-slide .review_content p:nth-child(1) {}
 main .review_bg .review_swiper .swiper-slide .review_content p.ani:nth-child(2) {
@@ -375,7 +376,7 @@ main .review_bg .swiper-pagination-bullet {
     background-color: #fff;
 }
 
-@keyframes fadeUp {
+@keyframes review {
     0% {opacity: 0; transform: translateY(30px);}
     100% {opacity: 1; transform: translateY(0);}
 }
