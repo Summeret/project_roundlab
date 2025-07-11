@@ -127,6 +127,7 @@ header .header .left .search_box input {
     font-size:0.75rem;
     width:180px;
     background-color: transparent;
+    color:rgba(0,0,0,0.8);
 }
 header .header .left .search_box > a {
     position:absolute; right:10px; top:4px;
