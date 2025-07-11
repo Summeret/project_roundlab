@@ -1,0 +1,29 @@
+/* brand_story.css */
+main {
+    text-align:center;
+    padding-top:60px;
+}
+main  h1 {
+    padding:200px;
+    font-size: 3.75rem; font-weight: 200;
+}
+main p {
+
+}
+main p img {
+    opacity:90%;
+}
+
+main .content {
+    padding:100px 0;
+}
+main .content h2 {
+    font-size:2.813rem; font-weight:700;
+    line-height:1.1;
+    margin-bottom:50px;
+}
+main .content p {
+    font-size: 1.125rem;
+    margin-bottom:5px;
+}
+main .content p:last-child {margin-bottom:0;}
