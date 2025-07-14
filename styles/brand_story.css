@@ -27,3 +27,7 @@ main .content p {
     margin-bottom:5px;
 }
 main .content p:last-child {margin-bottom:0;}
+
+main .story_swiper {}
+main .story_swiper .swiper-wrapper {}
+main .story_swiper .swiper-wrapper .swiper-slide {}
