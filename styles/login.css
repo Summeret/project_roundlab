@@ -1,0 +1,71 @@
+body {
+    padding-top:60px;
+}
+main {
+    width:400px; margin:0 auto;
+    text-align: center;
+}
+main h1 {
+    margin:124px 0 50px;
+    font-size:1.75rem; font-weight:300;
+    letter-spacing: 0.5em;
+}
+main .login_wrap {}
+main .login_wrap input {
+    width:400px; 
+    border:1px solid rgba(52,52,52,0.5);
+    border-radius: 5px;
+    padding:15px 20px;
+    font-size:0.75rem;
+    color:rgba(52,52,52,0.5);
+}
+main .login_wrap input[name$=id] {
+    margin-bottom:10px;
+}
+main .login_btn {
+    width:400px; 
+    border:1px solid #0E4885;
+    border-radius:5px;
+    padding:15px 0;
+    color:#0E4885;
+    font-weight:600;
+    margin:30px 0 50px 0;
+    background-color: #fff;
+}
+main .login_btn:hover {
+    background-color: #0E4885;
+    color:#fff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+main .join {
+    display:flex; flex-flow:column nowrap;
+}
+main .join a {
+    font-size:0.75rem;
+}
+main .join a:first-child {margin-bottom:10px;}
+main .join::after {
+    content:''; display: block;
+    width:400px; height:0.5px;
+    background-color: rgba(52,52,52,0.5);
+    margin:50px 0;
+}
+main .kakao_login {
+    width:400px;
+    background-color: rgba(254,229,0,0.5); color:#3C1E1E;
+    border-radius: 5px;
+    padding:15px 0;
+    font-weight: 600;
+    margin-bottom:124px;
+    height:50px;
+}
+main .kakao_login:hover {
+    background-color: #FEE500;
+    transition:background-color 1s ease;
+}
+
+main .error_msg {
+    color:#f00; font-size:0.75rem; /* padding:5px 0; */ line-height:1.4;
+    text-align:left;
+    margin-top:10px;
+}
