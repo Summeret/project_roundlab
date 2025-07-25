@@ -495,3 +495,11 @@ main .instagram_wrap .insta_swiper .swiper-wrapper {}
 main .instagram_wrap .insta_swiper .swiper-wrapper .swiper-slide {}
 main .instagram_wrap .insta_swiper .swiper-wrapper .swiper-slide a {}
 main .instagram_wrap .insta_swiper .swiper-wrapper .swiper-slide a img {}
+main .instagram_wrap .insta_swiper .swiper-wrapper .swiper-slide a:hover img {
+    animation: insta 0.3s linear both;
+}
+
+@keyframes insta {
+    0% {transform: scale(1);}
+    100% {transform: scale(0.95);}
+}
