@@ -1,0 +1,108 @@
+/* jajaknamu.css */
+body {
+    padding-top:80px;
+}
+main {
+    width:1300px; margin:0 auto;
+    text-align: center;
+}
+main .title_wrap {
+    margin:120px 0;
+}
+main .title_wrap h1 {
+    font-size: 2rem; margin-bottom: 50px;
+}
+main .title_wrap .menu {
+    display: flex; gap:20px;
+    width:max-content; margin:0 auto;
+}
+main .title_wrap .menu a {
+    padding:10px 20px;
+    border-top:0.1px solid rgba(52,52,52,0.2);
+    border-bottom:0.1px solid rgba(52,52,52,0.2);
+    font-size: 0.875rem; color:rgba(52,52,52,0.9);
+    transition: all 0.8s ease;
+}
+
+main .title_wrap .menu a:hover {
+    font-weight: 500; color:#fff;
+}
+
+main .title_wrap .menu a:nth-child(1):hover {
+    background-color: #A9CEE8;
+    border-top:1px solid transparent;
+    border-bottom:1px solid transparent;
+}
+main .title_wrap .menu a:nth-child(2):hover {
+    background-color: #0E4885;
+    border-top:1px solid transparent;
+    border-bottom:1px solid transparent;
+}
+main .title_wrap .menu a:nth-child(3):hover {
+    background-color: #276059;
+    border-top:1px solid transparent;
+    border-bottom:1px solid transparent;
+}
+main .title_wrap .menu a:nth-child(4):hover {
+    background-color: #F88767;
+    border-top:1px solid transparent;
+    border-bottom:1px solid transparent;
+}
+main .title_wrap .menu a:nth-child(5):hover {
+    background-color: #0E4885;
+    border-top:1px solid transparent;
+    border-bottom:1px solid transparent;
+}
+main .title_wrap .menu a:nth-child(6):hover {
+    background-color: #F49F35;
+    border-top:1px solid transparent;
+    border-bottom:1px solid transparent;
+}
+main .title_wrap .menu a:nth-child(7):hover {
+    background-color: #CA9D59;
+    border-top:1px solid transparent;
+    border-bottom:1px solid transparent;
+}
+main .title_wrap .menu a:nth-child(8):hover {
+    background-color: #BB352C;
+    border-top:1px solid transparent;
+    border-bottom:1px solid transparent;
+}
+
+/* ========================================================== */
+
+main .product_wrap {
+    display: flex; gap:100px;
+    margin-bottom: 120px;;
+}
+main .product_wrap ul {}
+main .product_wrap ul li {
+    width:250px; 
+}
+main .product_wrap ul li a {
+    width:100%;
+}
+main .product_wrap ul li a .photo {
+    margin-bottom:20px;
+}
+main .product_wrap ul li a .photo:hover {
+    border:1px solid #0E4885;
+    width:250px; height:350px;
+    border-radius: 30px;
+}
+main .product_wrap ul li a .photo img {
+    width:100%; height:100%;
+}
+main .product_wrap ul li a .content {}
+main .product_wrap ul li a .content h2 {
+    font-size: 0.875rem; margin-bottom:20px;
+}
+main .product_wrap ul li a .content .price {}
+main .product_wrap ul li a .content .price span {}
+main .product_wrap ul li a .content .price span del {
+    font-size: 0.625rem; color:rgba(52,52,52,0.5);
+    margin-right:10px;
+}
+main .product_wrap ul li a .content .price em {
+    font-size: 0.875rem;
+}
